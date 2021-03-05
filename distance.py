@@ -5,17 +5,28 @@ conn = mysql.connector.connect(
     host = "localhost",
     user = "root",
     password = "tiger",
-    database = "project"
+    database = "Project"
     )
 
 if conn.is_connected() == True:
     cur = conn.cursor()
+
+def initial():
+    data = []
+    query = "Select Station_Name from station"
+    cur.execute(query)
+    rs = cur.fetchall()
+    for i in rs:
+        query = "Insert into algo(node) values('{}')".format(i[0])
+        cur.execute(query)
+        cur.execute("COMMIT")
     
-def get_data(start):
-    query = "SELECT * FROM station where Station_Name = '{}'". format(start)
+def get_stations(station):
+    query = "SELECT * FROM station where Station_Name = '{}'". format(station)
     cur.execute(query)
     rs = cur.fetchone()
     start_neighbour = rs[5].split(",")
+    return start_neighbour
     
     
 def get_lat_lan(station):
@@ -47,6 +58,9 @@ def Distance(a,b):
 
 def AstarAlgo(start,end):
     path = []
+    #stations = get_stations(station)
+    
+    
     
     
 

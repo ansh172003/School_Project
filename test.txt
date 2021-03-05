@@ -1,0 +1,18 @@
+'''data = [["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #Sinle point - TRUE
+        ["Bikaner", "Agra", "ai#ab#ah", "2021-3-5-1-33", "2021-3-5-11-16", 1767, 120]]
+
+data = [["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #Sinle point - False
+        ["Bikaner", "Agra", "ai#ab#ah", "2021-3-5-9-33", "2021-3-5-11-16", 1767, 120]]
+
+data = [["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #UNI Long - TRUE
+        ["Kolkata", "Pune", "af#ac#ad#aj", "2021-3-5-1-33", "2021-3-5-11-16", 1767, 120]]
+
+data = [["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #UNI Long - False
+        ["Kolkata", "Pune", "af#ac#ad#aj", "2021-3-5-5-33", "2021-3-5-11-16", 1767, 120]]
+
+data =[["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #Opp LONG - True
+        ["Pune","Kolkata", "aj#ad#ac#af", "2021-3-4-20-33", "2021-3-5-11-16", 1767, 150]]
+
+data6 =[["Delhi", "Mumbai", "aa#ab#ac#ad#ae", "2021-3-5-9-13", "2021-3-5-7-47", 1234, 120], #Opp lONG - False
+        ["Pune","Kolkata", "aj#ad#ac#af", "2021-3-5-14-33", "2021-3-5-11-16", 1767, 120]]
+'''
